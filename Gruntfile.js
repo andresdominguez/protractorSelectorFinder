@@ -263,7 +263,7 @@ module.exports = function (grunt) {
         compress: {
             dist: {
                 options: {
-                    archive: 'package/Protractor selector finder.zip'
+                    archive: 'package/protractor-selector-finder.zip'
                 },
                 files: [{
                     expand: true,
