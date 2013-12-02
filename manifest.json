@@ -4,9 +4,19 @@
   "description": "A chrome extension to find protractor selectors in the current page for your integration tests.",
   "version": "1.0",
   "permissions": [
-    "contextMenus"
+    "contextMenus",
+    "tabs"
   ],
   "background": {
     "scripts": ["scripts/background.js"]
-  }
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "http://*/*",
+        "https://*/*"
+      ],
+      "js": ["scripts/selected-element.js"]
+    }
+  ]
 }

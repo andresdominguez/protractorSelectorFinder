@@ -1,6 +1,9 @@
-var findSelector = function(info, tab) {
-
-};
+//background
+function findSelector(info, tab) {
+  chrome.tabs.sendRequest(tab.id, "getClickedEl", function(clickedEl) {
+    elt.value = clickedEl.value;
+  });
+}
 
 chrome.contextMenus.create({
   'title': 'Find protractor selector',
