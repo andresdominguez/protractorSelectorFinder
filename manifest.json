@@ -1,12 +1,12 @@
 {
   "manifest_version": 2,
-  "name": "One-click Kittens",
-  "description": "This extension demonstrates a browser action with kittens.",
+  "name": "Protractor selector finder",
+  "description": "A chrome extension to find protractor selectors in the current page for your integration tests.",
   "version": "1.0",
   "permissions": [
     "contextMenus"
   ],
   "background": {
-    "scripts": ["background.js"]
+    "scripts": ["scripts/background.js"]
   }
 }
